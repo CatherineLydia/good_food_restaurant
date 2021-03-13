@@ -40,10 +40,26 @@
               <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-lg fa-info"></i>About</a></li>
               <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-lg fa-address-card"></i>Contact</a></li>
           </ul>
-          <span class="navbar-text align-items-center">
-              <a role="button" ><i class="fa fa-lg fa-user-circle"></i></a>
-              <a role="button" class="p-5"><i class="fa fa-lg fa-cart-plus"></i></a>
-          </span>
+          <div class="navbar-text align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-6">
+                            <small>
+                                <span id="locationDisplay">
+                                    <a role="button" data-toggle="modal" data-target="#locationModal" id="chooseLocation"><i class="fa fa-location-arrow"></i> Choose Location</a>
+                                </span></br>
+                                <a role="button" data-toggle="modal" data-target="#locationModal" id="changeLocation"><i class="fa fa-location-arrow"></i> Change Location</a>
+                            </small>
+                        </div>
+                        <div class="col-2 col-md-2">
+                            <a role="button" ><i class="fa fa-lg fa-user-circle"></i></a>
+                        </div>
+                        <div class="col-4 col-md-4">
+                            <a role="button" class="p-5"><i class="fa fa-lg fa-cart-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+          </div>
       </div>
   </div>
 </nav>
@@ -57,13 +73,89 @@
         </div>
         <div class="row">
             <div class="col-6 p-5 text-center text-nowrap">
-                <button type="button" class="btn btn-lg btn-danger"><i class="fa fa-lg fa-location-arrow"></i> Choose Location</button>
+                <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#locationModal"><i class="fa fa-lg fa-location-arrow"></i> Choose Location</button>
             </div>
         </div>    
     </div>
 </div>
 
-
+<div id="locationModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" id="locationModalHeader">
+                <h3 class="modal-title"><i class="fa fa-location-arrow"></i>Locations</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row my-4">
+                        <div class="col-12 my-auto">
+                            <h3 class="text-center" id="us">United States</h3>
+                        </div>
+                    </div>
+                    <div class="row locationRow my-4">
+                        <div class="col-md-6 my-auto">
+                            <h4>Delaware</h4>
+                        </div>
+                        <div class="col text-center text-md-left">
+                            <ul class="list-unstyled">
+                                <li><a role="button"  id="bearDE" class="locationName" data-dismiss="modal">Bear</a></li>
+                                <li><a role="button"  id="NewarkDE" class="locationName" data-dismiss="modal">Newark</a></li>
+                                <li><a role="button"  id="wilmingtonDE" class="locationName" data-dismiss="modal">Wilmington</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row locationRow my-4">
+                        <div class="col-md-6 my-auto">
+                            <h4>New Jersey</h4>
+                        </div>
+                        <div class="col text-center text-md-left">
+                            <ul class="list-unstyled">
+                                <li><a role="button" id="jerseycityNJ" class="locationName" data-dismiss="modal">Jersey City</a></li>
+                                <li><a role="button" id="trentonNJ" class="locationName" data-dismiss="modal">Trenton</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row locationRow my-4">
+                        <div class="col-md-6 my-auto">
+                            <h4>New York</h4>
+                        </div>
+                        <div class="col text-center text-md-left">
+                            <ul class="list-unstyled">
+                                <li><a role="button" id="buffaloNY" class="locationName" data-dismiss="modal">Buffalo</a></li>
+                                <li><a role="button" id="newyorkcityNY" class="locationName" data-dismiss="modal">New York City</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row locationRow my-4">
+                        <div class="col-md-6 my-auto">
+                            <h4>Maryland</h4>
+                        </div>
+                        <div class="col text-center text-md-left">
+                            <ul class="list-unstyled">
+                                <li><a role="button" id="baltimoreMD" class="locationName" data-dismiss="modal">Baltimore</a></li>
+                            </ul>
+                        </div>
+                    </div>   
+                    <div class="row locationRow my-4">
+                        <div class="col-md-6 my-auto">
+                            <h4>Pennsylvania</h4>
+                        </div>
+                        <div class="col text-center text-md-left">
+                            <ul class="list-unstyled">
+                                <li><a role="button" id="downingtonPA" class="locationName" data-dismiss="modal">Downington</a></li>
+                                <li><a role="button" id="extonPA" class="locationName" data-dismiss="modal">Exton</a></li>
+                                <li><a role="button" id="kingofprussiaPA" class="locationName" data-dismiss="modal">King Of Prussia</a></li>
+                                <li><a role="button" id="newhopePA" class="locationName" data-dismiss="modal">New Hope</a></li>
+                                <li><a role="button" id="philadelphiaPA" class="locationName" data-dismiss="modal">Philadelphia</a></li>
+                            </ul>
+                        </div>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Second Parallax Section -->
 <div class="jumbotron paralDiv" style="background-image: url('./img/taco.jpg')">
@@ -86,5 +178,63 @@ This is a footer
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+        $("#changeLocation").hide();
+
+        $("#bearDE").click(function(){
+            document.getElementById("locationDisplay").innerHTML="Bear,DE";
+            $("#changeLocation").show();
+        });
+        $("#NewarkDE").click(function(){
+            document.getElementById("locationDisplay").innerHTML="Newark,DE";
+            $("#changeLocation").show();
+        });
+        $("#wilmingtonDE").click(function(){
+            document.getElementById("locationDisplay").innerHTML="Wilmington,DE";
+            $("#changeLocation").show();
+        });
+        $("#jerseycityNJ").click(function(){
+            document.getElementById("locationDisplay").innerHTML="Jersey City,NJ";
+            $("#changeLocation").show();
+        });
+        $("#trentonNJ").click(function(){
+            document.getElementById("locationDisplay").innerHTML="Trenton,NJ";
+            $("#changeLocation").show();
+        });
+        $("#buffaloNY").click(function(){
+            document.getElementById("locationDisplay").innerHTML="Buffalo,NY";
+            $("#changeLocation").show();
+        });
+        $("#newyorkcityNY").click(function(){
+            document.getElementById("locationDisplay").innerHTML="New York City,NY";
+            $("#changeLocation").show();
+        });
+        $("#baltimoreMD").click(function(){
+            document.getElementById("locationDisplay").innerHTML="Baltimore,MD";
+            $("#changeLocation").show();
+        });
+        $("#downingtonPA").click(function(){
+            document.getElementById("locationDisplay").innerHTML="Downington,PA";
+            $("#changeLocation").show();
+        });
+        $("#extonPA").click(function(){
+            document.getElementById("locationDisplay").innerHTML="Exton,PA";
+            $("#changeLocation").show();
+        });
+        $("#kingofprussiaPA").click(function(){
+            document.getElementById("locationDisplay").innerHTML="King Of Prussia,PA";
+            $("#changeLocation").show();
+        });
+        $("#newhopePA").click(function(){
+            document.getElementById("locationDisplay").innerHTML="New Hope,PA";
+            $("#changeLocation").show();
+        });
+        $("#philadelphiaPA").click(function(){
+            document.getElementById("locationDisplay").innerHTML="Philadelphia,PA";
+            $("#changeLocation").show();
+        });
+    });
+    </script>
 </body>
 </html>

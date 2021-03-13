@@ -33,13 +33,43 @@ h1{
      max-height:500px;
     
 }
+#foodMenuTab{
+     background-color:#e88d17;
+     color:white;
+}
 
 h4{
      text-align:center;
+     color:#e88d17;
 }
 
 .img-menu{
      height:100%;
      max-height:450px; 
      width:100%;
+}
+
+.locationRow{
+     
+     border-bottom:1px solid #DDD;
+     
+}
+.locationName{
+     color:black;
+}
+.locationName:hover,#changeLocation:hover,#chooseLocation:hover{
+     color:blue;
+     text-decoration:none;
+     background-color:yellow;
+}
+#locationModalHeader{
+     background-color:#e88d17;
+     color:white;
+}
+#us{
+     text-decoration:underline;
+
+}
+#locationDisplay{
+    color:white;
 }
