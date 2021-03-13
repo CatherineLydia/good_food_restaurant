@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional -->
+  
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Title -->
+    <title>Good Food Restaurant</title>
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top ">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/good-food-logo.jpg" height="40px"/></a>    
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#goodFood">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="goodFood">
+          <ul class="navbar-nav align-items-center">
+              <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-lg fa-bars"></i>Menu</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-lg fa-location-arrow"></i>Locations</a></li> -->
+              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-lg fa-coffee"></i>Reservations</a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-lg fa-info"></i>About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-lg fa-address-card"></i>Contact</a></li>
+          </ul>
+          <span class="navbar-text align-items-center">
+              <a role="button" ><i class="fa fa-lg fa-user-circle"></i></a>
+              <a role="button" class="p-5"><i class="fa fa-lg fa-cart-plus"></i></a>
+          </span>
+      </div>
+  </div>
+</nav>
+<div style="padding:75px;">
+<h2>Food Menu</h2>
+<ul class="nav nav-tabs nav-fill" style="background-color:yellow">
+  <li class="nav-item">
+    <a class="nav-link active" href="#starters" role="tab" data-toggle="tab">Starters</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#soups-salads" role="tab" data-toggle="tab">Soups and Salads</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#pastas" role="tab" data-toggle="tab">Pastas</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#pizza" role="tab" data-toggle="tab">Pizza</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#kids" role="tab" data-toggle="tab">Kids Special</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#desserts" role="tab" data-toggle="tab">Desserts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#beverages" role="tab" data-toggle="tab">Beverages</a>
+  </li>
+</ul>
+<div class="tab-content overflow-auto">
+    <div role="tabpanel" class="tab-pane fade show active" id="starters">
+        <h4>Starters</h4>
+        <div class="container ">
+            <div class="row">
+                <div class="col d-none d-lg-block">
+                    <img src="./img/starters.jpg" class="img-menu" />
+                </div>
+                <div class="col">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col p-3">
+                                Mozzarella Sticks
+                                <!-- <img src="./img/mozzarella-sticks.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $6.99
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Artichoke Dip
+                                <!-- <img src="./img/artichoke-dip.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $7.49
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                BreadSticks
+                                <!-- <img src="./img/breadsticks.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $4.99
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Butter Ravioli
+                                <!-- <img src="./img/butter-ravioli.jpg"  width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $8.99
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Onion Rings
+                                <!-- <img src="./img/onion-rings.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $5.99
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="soups-salads">
+    <h4>Soups and Salads</h4>
+    <div class="container">
+            <div class="row">
+                <div class="col d-none d-lg-block">
+                    <img src="./img/soups-salads.jpg" class="img-menu" />
+                </div>
+                <div class="col">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col p-3">
+                                Cabbage Soup
+                                <!-- <img src="./img/cabbage-soup.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $4.49
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Chicken Soup
+                                <!-- <img src="./img/chicken-soup.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $7.49
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Vegetable Soup
+                                <!-- <img src="./img/veg-soup.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $5.99
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Italian Chopped Salad
+                                <!-- <img src="./img/italian-salad.jpg"  width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $6.49
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Mediterranean Salad
+                                <!-- <img src="./img/mediterranean-salad.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $5.99
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Rainbow Salad
+                                <!-- <img src="./img/rainbow-salad.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $4.49
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Creamy Corn Salad
+                                <!-- <img src="./img/creamy-corn-salad.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $5.49
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="pastas">
+    <h4>Pastas</h4>
+    <div class="container">
+            <div class="row">
+                <div class="col d-none d-lg-block">
+                    <img src="./img/pasta.jpeg" class="img-menu"/>
+                </div>
+                <div class="col">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col p-3">
+                                Bruschetta Pasta
+                                <!-- <img src="./img/bruschetta-pasta.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $6.99
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Creamy Ground Beef Pasta
+                                <!-- <img src="./img/beef-pasta.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $12.49
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Mushroom Pasta
+                                <!-- <img src="./img/mushroom-Pasta.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $10.79
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Red and White Pasta
+                                <!-- <img src="./img/red-white-pasta.jpg"  width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $5.99
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Shrimp Pasta
+                                <!-- <img src="./img/shrimp-pasta.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $8.99
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="pizza">
+    <h4>Pizza</h4>
+    <div class="container">
+            <div class="row">
+                <div class="col d-none d-lg-block">
+                    <img src="./img/pizza.jpg" class="img-menu"/>
+                </div>
+                <div class="col">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col p-3">
+                                Spicy Chicken Pizza
+                                <!-- <img src="./img/chicken-pizza.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $8.99
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Hawaiian Pizza
+                                <!-- <img src="./img/hawaiian-pizza.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $9.49
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Pepperoni Pizza
+                                <!-- <img src="./img/pepperoni-pizza.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $5.79
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Veggie Pizza
+                                <!-- <img src="./img/veggie_pizza.jpg"  width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $8.99
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="kids">
+    <h4>Kids Special</h4>
+    <div class="container">
+            <div class="row">
+                <div class="col d-none d-lg-block">
+                    <img src="./img/kids-menu.png" class="img-menu"/>
+                </div>
+                <div class="col">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col p-3">
+                                Chicken Nuggets
+                                <!-- <img src="./img/nuggets.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $4.99
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                French Fries
+                                <!-- <img src="./img/french-fries.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $3.49
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Fluffy Buttermilk Pancakes
+                                <!-- <img src="./img/pancakes.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $5.79
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="desserts">
+    <h4>Desserts</h4>
+    <div class="container">
+            <div class="row">
+                <div class="col d-none d-lg-block">
+                    <img src="./img/dessert.jpg" class="img-menu" />
+                </div>
+                <div class="col">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col p-3">
+                                Chocolate Lasagna
+                                <!-- <img src="./img/lasagna.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $6.99
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                KitKat Ice Cream Pie
+                                <!-- <img src="./img/kitkat-pie.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $5.49
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Fried Ice Cream
+                                <!-- <img src="./img/fried-icream.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $7.79
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Oreo Dessert Pots
+                                <!-- <img src="./img/oreo-pots.jpeg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $3.79
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="beverages">
+    <h4>Beverages</h4>
+    <div class="container">
+            <div class="row">
+                <div class="col d-none d-lg-block">
+                    <img src="./img/beverage.jpg" class="img-menu" />
+                </div>
+                <div class="col">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col p-3">
+                                Soft Drinks
+                                <!-- <img src="./img/soft-drinks.jpeg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $2.99
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Dark Chocolate Mocha
+                                <!-- <img src="./img/mocha.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $5.49
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col p-3">
+                                Caramel Latte
+                                <!-- <img src="./img/latte.jpg" width="125px"/> -->
+                            </div>
+                            <div class="col-2 p-3">
+                                $4.79
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Footer Section -->
+
+<footer>
+<div style="height:200px;background-color:brown;">
+This is a footer
+</div>
+</footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
