@@ -29,6 +29,7 @@ h4,h3{
      text-align:center;
      color:#e88d17;
      text-shadow:2px 2px black;
+     font-family:'Courgette', cursive;
 }
 
 /* Food Menu */
@@ -100,4 +101,19 @@ h4,h3{
 }
 .card-img-overlay{
      color:#faf3e8;
+}
+
+/* Get Emails Div */
+.emailDiv{
+     position:relative;
+    top:20vh;
+}
+
+/* User Login and Signup */
+#signup{
+     text-decoration:underline;
+     color:blue;
+}
+#signup:hover,#forgotPwd:hover{
+     background-color:yellow;
 }

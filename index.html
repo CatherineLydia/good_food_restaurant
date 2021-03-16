@@ -53,8 +53,30 @@
                                 <span id="locationPhone" class="text-center text-nowrap"></span>
                             </small>
                         </div>
+                        <!-- User Login and Sign Up -->
                         <div class="col-2 col-md-2">
-                            <a role="button" ><i class="fa fa-lg fa-user-circle"></i></a>
+                            <a role="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><i class="fa fa-lg fa-user-circle"></i></a>
+                            <div class="dropdown-menu" style="white-space: nowrap;">
+                                <form class="px-4 py-3 align-items-center">
+                                    <div class="form-group row">
+                                            <input type="email" class="form-control form-control-sm" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                    </div>
+                                    <div class="form-group row">
+                                            <input type="password" class="form-control form-control-sm" id="exampleDropdownFormPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-check mb-1">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary px-5">Sign in</button>
+                                </form>
+                                <small><a class="dropdown-item" href="#" id="forgotPwd">Forgot password?</a></small>
+                                <div class="dropdown-divider"></div>
+                                    <a type="button" class="btn btn-primary dropdown-item" href="#"> <small class="text-muted">New user?</small><span id="signup"> Sign up</span></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-4 col-md-4">
                             <a role="button" class="p-5"><i class="fa fa-lg fa-cart-plus"></i></a>
@@ -256,6 +278,23 @@
 <!-- Third Parallax Section -->
 <div class="jumbotron paralDiv" style="background-image: url('./img/dessert.jpg')">
 
+<div class="container-fluid emailDiv">
+        <div class="row p-5">
+            <div class="col">
+                <h3 class="text-white">Get Emails</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-3 text-center">
+                <p class="text-white">Stay in the loop by signing up to receive email updates on special offers and promotions from us.</p>
+            </div>
+        </div>    
+        <div class="row">
+            <div class="col text-center">
+                <a type="button" class="btn btn-lg btn-primary px-5 " href="#">Sign Up</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 
