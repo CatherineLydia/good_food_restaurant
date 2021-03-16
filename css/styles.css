@@ -90,3 +90,14 @@ h4,h3{
 #reserveTableDiv{
      border:3px solid #e88d17;
 }
+
+/* Menu Dispaly cards */
+.card{
+     border:3px solid black;
+}
+.menuName{
+     font-family:'Courgette', cursive;
+}
+.card-img-overlay{
+     color:#faf3e8;
+}
