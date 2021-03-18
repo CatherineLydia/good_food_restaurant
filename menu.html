@@ -145,444 +145,1631 @@
     </div>
 </div>
 
-
-<!-- Food Menu Tab -->
+<!-- Food Menu Pills -->
 <div style="padding:75px;">
-<h2>Food Menu</h2>
-<ul class="nav nav-tabs nav-fill" id="foodMenuTab">
-  <li class="nav-item">
-    <a class="nav-link active" href="#starters" role="tab" data-toggle="tab">Starters</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#soups-salads" role="tab" data-toggle="tab">Soups and Salads</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#pastas" role="tab" data-toggle="tab">Pastas</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#pizza" role="tab" data-toggle="tab">Pizza</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#kids" role="tab" data-toggle="tab">Kids Special</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#desserts" role="tab" data-toggle="tab">Desserts</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#beverages" role="tab" data-toggle="tab">Beverages</a>
-  </li>
-</ul>
-<div class="tab-content overflow-auto">
-    <div role="tabpanel" class="tab-pane fade show active" id="starters">
-        <h4>Starters</h4>
-        <div class="container ">
-            <div class="row">
-                <div class="col d-none d-lg-block">
-                    <img src="./img/starters.jpg" class="img-menu" />
-                </div>
-                <div class="col">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col p-3">
-                                Mozzarella Sticks
-                                <!-- <img src="./img/mozzarella-sticks.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $6.99
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Artichoke Dip
-                                <!-- <img src="./img/artichoke-dip.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $7.49
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                BreadSticks
-                                <!-- <img src="./img/breadsticks.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $4.99
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Butter Ravioli
-                                <!-- <img src="./img/butter-ravioli.jpg"  width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $8.99
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Onion Rings
-                                <!-- <img src="./img/onion-rings.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $5.99
-                            </div>
-                        </div>
-                        <hr />
-                    </div>
+    <h2 class="mb-5">Food Menu</h2>
+    <div class="container">
+        <div class="row row-flex  align-items-start">
+            <div class="col-sm-3">
+                <div class="nav flex-column nav-pills" id="foodMenuTab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active foodPills"  data-toggle="pill" href="#starters" role="tab">Starters</a>
+                    <a class="nav-link foodPills" data-toggle="pill" href="#soups-salads" role="tab">Soups and Salads</a>
+                    <a class="nav-link foodPills" data-toggle="pill" href="#pastas" role="tab">Pastas</a>
+                    <a class="nav-link foodPills" data-toggle="pill" href="#pizza" role="tab">Pizza</a>
+                    <a class="nav-link foodPills" data-toggle="pill" href="#kids" role="tab">Kids Special</a>
+                    <a class="nav-link foodPills" data-toggle="pill" href="#desserts" role="tab">Desserts</a>
+                    <a class="nav-link foodPills" data-toggle="pill" href="#beverages" role="tab">Beverages</a>
                 </div>
             </div>
-        </div>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="soups-salads">
-    <h4>Soups and Salads</h4>
-    <div class="container">
-            <div class="row">
-                <div class="col d-none d-lg-block">
-                    <img src="./img/soups-salads.jpg" class="img-menu" />
-                </div>
-                <div class="col">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col p-3">
-                                Cabbage Soup
-                                <!-- <img src="./img/cabbage-soup.jpg" width="125px"/> -->
+            <!-- Tab Contents -->
+            <div class="col">
+                <div class="tab-content overflow-auto">
+
+                    <!-- Starters -->
+                    <div role="tabpanel" class="tab-pane fade show active" id="starters">
+                        <h4>Starters</h4>
+                        <div id="startersAccordion">
+                            <!-- Mozzarella Sticks -->
+                            <div class="card ">
+                                <div class="card-header foodCard justify-content-between">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#mozzarellaSticks">
+                                                    Mozzarella Sticks</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$6.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="mozzarellaSticks" class="collapse" data-parent="#startersAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/mozzarella-sticks.jpg" alt="image of mozzarella-sticks" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2 p-3">
-                                $4.49
+                            <!-- Artichoke Dip-->
+                            <div class="card ">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#artichokeDip">
+                                                    Artichoke Dip</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$7.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="artichokeDip" class="collapse" data-parent="#startersAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/artichoke-dip.jpg" alt="image of artichoke-dip" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--BreadSticks-->
+                            <div class="card ">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#breadSticks">
+                                                    BreadSticks</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $4.79</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="breadSticks" class="collapse" data-parent="#startersAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/breadsticks.jpg" alt="image of breadsticks" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Butter Ravioli-->
+                            <div class="card ">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#butterRavioli">
+                                                    Butter Ravioli</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $7.79</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="butterRavioli" class="collapse" data-parent="#startersAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/butter-ravioli.jpg" alt="image of butter-ravioli" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Onion Rings -->
+                            <div class="card ">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-6">
+                                                <h5 class="mb-0 ">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#onionRings">
+                                                    Onion Rings
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$8.49</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="onionRings" class="collapse" data-parent="#startersAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/onion-rings.jpg" alt="image of onion-rings" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Chicken Soup
-                                <!-- <img src="./img/chicken-soup.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $7.49
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Vegetable Soup
-                                <!-- <img src="./img/veg-soup.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $5.99
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Italian Chopped Salad
-                                <!-- <img src="./img/italian-salad.jpg"  width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $6.49
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Mediterranean Salad
-                                <!-- <img src="./img/mediterranean-salad.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $5.99
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Rainbow Salad
-                                <!-- <img src="./img/rainbow-salad.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $4.49
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Creamy Corn Salad
-                                <!-- <img src="./img/creamy-corn-salad.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $5.49
-                            </div>
-                        </div>
-                        <hr />
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="pastas">
-    <h4>Pastas</h4>
-    <div class="container">
-            <div class="row">
-                <div class="col d-none d-lg-block">
-                    <img src="./img/pasta.jpeg" class="img-menu"/>
-                </div>
-                <div class="col">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col p-3">
-                                Bruschetta Pasta
-                                <!-- <img src="./img/bruschetta-pasta.jpg" width="125px"/> -->
+                    <!-- Soups and Salads -->
+                    <div role="tabpanel" class="tab-pane fade" id="soups-salads">
+                        <h4>Soups and Salads</h4>
+                        <div id="soupAccordion">
+                            <!-- Cabbage Soup -->
+                            <div class="card">
+                                <div class="card-header foodCard justify-content-between">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#cabbageSoup">
+                                                    Cabbage Soup</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$6.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="cabbageSoup" class="collapse" data-parent="#soupAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/cabbage-soup.jpg" alt="image of cabbage-soup" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2 p-3">
-                                $6.99
+                            <!--  Chicken Soup-->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#chickenSoup">
+                                                    Chicken Soup</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$10.49</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="chickenSoup" class="collapse" data-parent="#soupAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/chicken-soup.jpg" alt="image of chicken-soup" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Vegetable Soup-->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#vegSoup">
+                                                    Vegetable Soup</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $7.79</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="vegSoup" class="collapse" data-parent="#soupAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/veg-soup.jpg" alt="image of veg-soup" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Italian Chopped Salad-->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#italianSalad">
+                                                    Italian Chopped Salad</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $6.79</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="italianSalad" class="collapse" data-parent="#soupAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/italian-salad.jpg" alt="image of italian-salad" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--Rainbow Salad-->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rainbowSalad">
+                                                    Rainbow Salad</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $8.79</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="rainbowSalad" class="collapse" data-parent="#soupAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/rainbow-salad.jpg" alt="image of rainbow-salad" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Creamy Corn Salad-->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#cornSalad">
+                                                    Creamy Corn Salad</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $5.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="cornSalad" class="collapse" data-parent="#soupAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="/img/creamy-corn-salad.jpg" alt="image of creamy-corn-salad" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Mediterranean Salad-->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-6">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#mediterraneanSalad">
+                                                    Mediterranean Salad</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$8.49</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="mediterraneanSalad" class="collapse" data-parent="#soupAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/mediterranean-salad.jpg" alt="image of mediterranean-salad" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Creamy Ground Beef Pasta
-                                <!-- <img src="./img/beef-pasta.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $12.49
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Mushroom Pasta
-                                <!-- <img src="./img/mushroom-Pasta.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $10.79
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Red and White Pasta
-                                <!-- <img src="./img/red-white-pasta.jpg"  width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $5.99
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Shrimp Pasta
-                                <!-- <img src="./img/shrimp-pasta.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $8.99
-                            </div>
-                        </div>
-                        <hr />
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="pizza">
-    <h4>Pizza</h4>
-    <div class="container">
-            <div class="row">
-                <div class="col d-none d-lg-block">
-                    <img src="./img/pizza.jpg" class="img-menu"/>
-                </div>
-                <div class="col">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col p-3">
-                                Spicy Chicken Pizza
-                                <!-- <img src="./img/chicken-pizza.jpg" width="125px"/> -->
+
+                    <!-- Pasta -->
+                    <div role="tabpanel" class="tab-pane fade" id="pastas">
+                        <h4>Pastas</h4>
+                        <div id="pastaAccordion">
+                            <!-- Bruschetta Pasta -->
+                            <div class="card">
+                                <div class="card-header foodCard justify-content-between">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#bruschettaPasta">
+                                                    Bruschetta Pasta</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$6.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="bruschettaPasta" class="collapse" data-parent="#pastaAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/bruschetta-pasta.jpg" alt="image of bruschetta-pasta" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2 p-3">
-                                $8.99
+                            <!-- Creamy Ground Beef Pasta-->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#beefPasta">
+                                                    Ground Beef Pasta</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$12.49</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="beefPasta" class="collapse" data-parent="#pastaAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/beef-pasta.jpg" alt="image of beef-pasta" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mushroom Pasta-->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#mushroomPasta">
+                                                    Mushroom Pasta</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $7.79</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="mushroomPasta" class="collapse" data-parent="#pastaAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/mushroom-Pasta.jpg" alt="image of mushroom-Pasta" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Shrimp Pasta-->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#shrimpPasta">
+                                                    Shrimp Pasta</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $7.79</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="shrimpPasta" class="collapse" data-parent="#pastaAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/shrimp-pasta.jpg" alt="image of shrimp-pasta" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Red and White Pasta -->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-6">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#redwhitePasta">
+                                                    Red and White Pasta</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$8.49</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="redwhitePasta" class="collapse" data-parent="#pastaAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/red-white-pasta.jpg" alt="image of red-white-pasta" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Hawaiian Pizza
-                                <!-- <img src="./img/hawaiian-pizza.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $9.49
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Pepperoni Pizza
-                                <!-- <img src="./img/pepperoni-pizza.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $5.79
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Veggie Pizza
-                                <!-- <img src="./img/veggie_pizza.jpg"  width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $8.99
-                            </div>
-                        </div>
-                        <hr />
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="kids">
-    <h4>Kids Special</h4>
-    <div class="container">
-            <div class="row">
-                <div class="col d-none d-lg-block">
-                    <img src="./img/kids-menu.png" class="img-menu"/>
-                </div>
-                <div class="col">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col p-3">
-                                Chicken Nuggets
-                                <!-- <img src="./img/nuggets.jpg" width="125px"/> -->
+
+                    <!-- Pizza -->
+                    <div role="tabpanel" class="tab-pane fade" id="pizza">
+                        <h4>Pizza</h4>
+                        <div id="pizzaAccordion">
+                            <!-- Spicy Chicken Pizza -->
+                            <div class="card">
+                                <div class="card-header foodCard justify-content-between">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#chickenPizza">
+                                                    Spicy Chicken Pizza</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$8.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="chickenPizza" class="collapse" data-parent="#pizzaAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/chicken-pizza.jpg" alt="image of chicken-pizza" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2 p-3">
-                                $4.99
+                            <!-- Hawaiian Pizza -->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#hawaiianPizza">
+                                                    Hawaiian Pizza</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$9.49</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="hawaiianPizza" class="collapse" data-parent="#pizzaAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/hawaiian-pizza.jpg" alt="image of hawaiian-pizza" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pepperoni Pizza -->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#pepperoniPizza">
+                                                    Pepperoni Pizza</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $7.79</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="pepperoniPizza" class="collapse" data-parent="#pizzaAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/pepperoni-pizza.jpg" alt="image of pepperoni-pizza" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Veggie Pizza -->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-6">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#veggiePizza">
+                                                    Veggie Pizza</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$8.49</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="veggiePizza" class="collapse" data-parent="#pizzaAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/veggie_pizza.jpg" alt="image of veggie_pizza" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                French Fries
-                                <!-- <img src="./img/french-fries.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $3.49
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Fluffy Buttermilk Pancakes
-                                <!-- <img src="./img/pancakes.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $5.79
-                            </div>
-                        </div>
-                        <hr />
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="desserts">
-    <h4>Desserts</h4>
-    <div class="container">
-            <div class="row">
-                <div class="col d-none d-lg-block">
-                    <img src="./img/dessert.jpg" class="img-menu" />
-                </div>
-                <div class="col">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col p-3">
-                                Chocolate Lasagna
-                                <!-- <img src="./img/lasagna.jpg" width="125px"/> -->
+
+                    <!-- Kids Special -->
+                    <div role="tabpanel" class="tab-pane fade" id="kids">
+                        <h4>Kids Special</h4>
+                        <div id="kidsAccordion">
+                            <!-- Chicken Nuggets -->
+                            <div class="card">
+                                <div class="card-header foodCard justify-content-between">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#chickenNuggets">
+                                                    Chicken Nuggets</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$4.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="chickenNuggets" class="collapse" data-parent="#kidsAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/nuggets.jpg" alt="image of chicken nuggets" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2 p-3">
-                                $6.99
+                            <!-- French Fries -->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#frenchFries">
+                                                    French Fries</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$3.49</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="frenchFries" class="collapse" data-parent="#kidsAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/french-fries.jpg" alt="image of french-fries" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fluffy Buttermilk Pancakes -->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#pancakes">
+                                                    Buttermilk Pancakes</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $5.79</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="pancakes" class="collapse" data-parent="#kidsAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/pancakes.jpg" alt="image of pancakes" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                KitKat Ice Cream Pie
-                                <!-- <img src="./img/kitkat-pie.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $5.49
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Fried Ice Cream
-                                <!-- <img src="./img/fried-icream.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $7.79
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Oreo Dessert Pots
-                                <!-- <img src="./img/oreo-pots.jpeg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $3.79
-                            </div>
-                        </div>
-                        <hr />
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="beverages">
-    <h4>Beverages</h4>
-    <div class="container">
-            <div class="row">
-                <div class="col d-none d-lg-block">
-                    <img src="./img/beverage.jpg" class="img-menu" />
-                </div>
-                <div class="col">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col p-3">
-                                Soft Drinks
-                                <!-- <img src="./img/soft-drinks.jpeg" width="125px"/> -->
+
+                    <!-- Desserts -->
+                    <div role="tabpanel" class="tab-pane fade" id="desserts">
+                        <h4>Desserts</h4>
+                        <div id="dessertAccordion">
+                            <!-- Chocolate Lasagna -->
+                            <div class="card">
+                                <div class="card-header foodCard justify-content-between">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#chocoLasagna">
+                                                    Chocolate Lasagna</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$6.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="chocoLasagna" class="collapse" data-parent="#dessertAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/lasagna.jpg" alt="image of lasagna" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2 p-3">
-                                $2.99
+                            <!-- KitKat Icecream Pie -->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#kitkatPie">
+                                                    KitKat Ice Cream Pie</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$5.49</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="kitkatPie" class="collapse" data-parent="#dessertAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/kitkat-pie.jpg" alt="image of kitkat-pie" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fried Icecream -->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#friedIcecream">
+                                                    Fried Ice Cream</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $7.79</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="friedIcecream" class="collapse" data-parent="#dessertAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/fried-icream.jpg" alt="image of fried-icream" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Oreo Pots -->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-6">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#oreoPots">
+                                                    Oreo Dessert Pots</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$3.49</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="oreoPots" class="collapse" data-parent="#dessertAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/oreo-pots.jpeg" alt="image of oreo-pots" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Dark Chocolate Mocha
-                                <!-- <img src="./img/mocha.jpg" width="125px"/> -->
+                    </div>
+
+                    <!-- Beverages -->
+                    <div role="tabpanel" class="tab-pane fade" id="beverages">
+                        <h4>Beverages</h4>
+                        <div id="beverageAccordion">
+                        <!-- Soft Drinks -->
+                            <div class="card">
+                                <div class="card-header foodCard justify-content-between">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#softDrinks">
+                                                    Soft Drinks</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$2.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="softDrinks" class="collapse" data-parent="#beverageAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/soft-drinks.jpeg" alt="image of soft-drinks" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2 p-3">
-                                $5.49
+                            <!-- Dark Choclate Mocha -->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8 align-items-left">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#mocha">
+                                                    Dark Choco Mocha</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span>$5.49</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="mocha" class="collapse" data-parent="#beverageAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/mocha.jpg" alt="image of mocha" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Caramel Latte -->
+                            <div class="card">
+                                <div class="card-header foodCard">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-10 col-md-8">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#latte">
+                                                    Caramel Latte</button>
+                                                </h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span> $4.79</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="latte" class="collapse" data-parent="#beverageAccordion">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="card-img-top" src="./img/latte.jpg" alt="image of latte" style="object-fit:cover;height:10vw;width:20%">
+                                            <div class="media-body text-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <p class="card-text"><small>Description of this food menu goes here.</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col">
+                                                            <form>
+                                                                <div class="form-group row justify-content-end">
+                                                                    <label class="col-form-label col-md-6 d-none d-lg-block" for="quantity" >Quantity</label>
+                                                                    <div class="col col-md-6">
+                                                                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" value="1">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary px-5 mr-0 d-none d-lg-block">Add to Cart</button>
+                                                            <button type="button" class="btn btn-primary mr-0 d-lg-none">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col p-3">
-                                Caramel Latte
-                                <!-- <img src="./img/latte.jpg" width="125px"/> -->
-                            </div>
-                            <div class="col-2 p-3">
-                                $4.79
-                            </div>
-                        </div>
-                        <hr />
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
+    
+
+
 <!-- Footer Section -->
 
 <footer>

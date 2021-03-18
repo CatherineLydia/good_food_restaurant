@@ -34,21 +34,31 @@ h4,h3{
 
 /* Food Menu */
 .tab-content{
-     border:1px solid #DDD;
-     border-top:none;
+     border: 1px solid #D0D0D0;
      padding:10px;
-     max-height:500px;
-    
 }
+
 #foodMenuTab{
-     background-color:#e88d17;
-     color:white;
+     background-color:#ebe9e8;
+     /* color:white; */
 }
 .img-menu{
      height:100%;
      max-height:450px; 
      width:100%;
 }
+
+.foodCard{
+     background-color:#e88d17;
+     color:white;
+}
+.foodCard:hover{
+     background-color:#f2cda0;
+     color:black;
+}
+/* a.nav-link:active{
+     background-color:green;;
+} */
 
 /* Location */
 .locationRow{
@@ -93,7 +103,7 @@ h4,h3{
 }
 
 /* Menu Dispaly cards */
-.card{
+.cardMasion,#book-table{
      border:3px solid black;
 }
 .menuName{
@@ -117,3 +127,4 @@ h4,h3{
 #signup:hover,#forgotPwd:hover{
      background-color:yellow;
 }
+
