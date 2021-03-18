@@ -55,29 +55,9 @@
                         </div>
                         <!-- User Login and Sign Up -->
                         <div class="col col-md-2 ml-0">
-                            <a role="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><i class="fa fa-lg fa-user-circle"></i></a>
-                            <!-- <div class="dropdown-menu" style="white-space: nowrap;">
-                                <form class="px-4 py-3 align-items-center">
-                                    <div class="form-group row">
-                                            <input type="email" class="form-control form-control-sm" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                                    </div>
-                                    <div class="form-group row">
-                                            <input type="password" class="form-control form-control-sm" id="exampleDropdownFormPassword1" placeholder="Password">
-                                    </div>
-                                    <div class="form-check mb-1">
-                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                        <label class="form-check-label" for="dropdownCheck">
-                                            Remember me
-                                        </label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary px-5">Sign in</button>
-                                </form>
-                                <small><a class="dropdown-item" href="#" id="forgotPwd">Forgot password?</a></small>
-                                <div class="dropdown-divider"></div>
-                                    <a type="button" class="btn btn-primary dropdown-item" href="#"> <small class="text-muted">New user?</small><span id="signup"> Sign up</span></a>
-                                </div>
-                            </div> -->
+                            <a role="button" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lg fa-user-circle"></i></a>
                         </div>
+                        <!-- Shopping Cart -->
                         <div class="col col-md-4 text-right">
                             <a role="button" ><i class="fa fa-lg fa-cart-plus"></i></a>
                         </div>
@@ -87,6 +67,142 @@
       </div>
   </div>
 </nav>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <a type="button" class="btn btn-primary px-3 mx-3" id="loginButton">Existing User</a>
+                    <a type="button" class="btn btn-primary px-3 mx-3" id="registerButton" >New User</a>
+                    <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                    
+                    <!-- Login Form -->
+                    <div id="login">
+                        <h3 class="mb-2">Login</h3>
+                            <div class="container-fluid">
+                                <form>
+                                    <!-- Email address -->
+                                    <div class="form-group row">
+                                            <label for="loginEmail" class="col-form-label col-md-6">Email address</label>
+                                            <div class="col-md-6">
+                                                <input type="email" class="form-control form-control-sm" id="loginEmail"  name="loginEmail" placeholder="Enter email">
+                                            </div>
+                                    </div>
+                                    <!-- Password -->
+                                    <div class="form-group row">
+                                            <label for="loginPassword" class="col-form-label col-md-6">Password</label>
+                                            <div class="col-md-6">
+                                                <input type="password" class="form-control form-control-sm" id="loginPassword" name="loginPassword" placeholder="Password">
+                                            </div>
+                                    </div>
+                                    <!-- Remember me -->
+                                    <div class="form-group row">
+                                        <div class="col">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="rememberMe" name="rememberMe" value="rememberYes">
+                                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                    </div>
+                    <!-- Register Form -->
+                    <div id="register">
+                        <h3 class="mb-2">Register</h3>
+                        <div class="container-fluid">
+                            <form>
+                                <!-- Name -->
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <!-- Email -->
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="inputEmail">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email">
+                                    </div>
+                                </div>
+                                <!-- Password -->
+                                <div class="form-row">
+                                    <div class="form-group col-xs-6">
+                                        <label for="inputPassword">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password">
+                                    </div>
+                                    <div class="form-group col-xs-6">
+                                        <label for="confirmPassword">Confirm Password</label>
+                                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                                    </div>
+                                    <small id="passwordHelpBlock" class="form-text text-muted">
+                                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                                    </small>
+                                </div>
+                                <!-- Address -->
+                                <div class="form-group">
+                                    <label for="inputAddress">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" name="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-5">
+                                        <label for="inputCity">City</label>
+                                        <input type="text" class="form-control" name="inputCity" id="inputCity">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputZip">Zip</label>
+                                        <input type="text" class="form-control" name="inputZip" id="inputZip">
+                                    </div>
+                                </div>
+                                <!-- Check me -->
+                                <div class="form-group">
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                    </label>
+                                    </div>
+                                </div>
+        
+                            </form>
+                
+                        </div>
+                    </div>
+                </div>
+            <div class="modal-footer">
+                    <div id="loginFooter">
+                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                    </div>
+                    <div id="registerFooter">
+                        <input class="btn btn-secondary btn-sm ml-auto" type="reset" value="Reset">
+                        <button type="submit" class="btn btn-primary btn-sm ml-1">Register</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- First Parallax Section -->
 <div class="jumbotron paralDiv" style="background-image: url('./img/burger.jpg')">

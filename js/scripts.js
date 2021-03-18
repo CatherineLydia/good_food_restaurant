@@ -67,4 +67,22 @@ $(function(){
             $("#locationPhone").html('<br/><a href="tel:+2673339999"><i class="fa fa-phone"</i> 267-333-9999</a>');
             $("#changeLocation").show();
         });
+
+        $("#login").show();
+        $("#register").hide();
+        $('#loginFooter').show();
+        $('#registerFooter').hide();
+
+        $('#loginButton').click(function(){
+            $("#register").hide();
+            $('#registerFooter').hide();
+            $("#login").show();
+            $('#loginFooter').show();
+        });
+        $('#registerButton').click(function(){
+            $("#login").hide();
+             $('#loginFooter').hide();
+            $("#register").show();
+            $('#registerFooter').show();
+        })
     });

@@ -8,6 +8,14 @@ background-position:center;
 /* opacity:0.7; */
 }
 
+/* food Jumbotron */
+#foodDiv{
+     min-height: 300px;
+     background-attachment: scroll;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position:center;
+}
 /* Remove Bottom Margin from Jumbotron */
 .jumbotron{margin-bottom: 0;}
 
@@ -36,6 +44,10 @@ h4,h3{
 .foodTabContent{
      border: 1px solid #D0D0D0;
      padding:10px;
+}
+#foodMenuHeading{
+     font-family:'Courgette', cursive;
+     font-size:5rem;
 }
 
 #foodMenuTab{
