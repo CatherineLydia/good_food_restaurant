@@ -33,6 +33,11 @@ h1{
      font-size:3rem;
      
 }
+h2{
+     font-family:'Courgette', cursive;
+     text-decoration:underline;
+     color:#e88d17;
+}
 h4,h3{
      text-align:center;
      color:#e88d17;
@@ -44,10 +49,6 @@ h4,h3{
 .foodTabContent{
      border: 1px solid #D0D0D0;
      padding:10px;
-}
-#foodMenuHeading{
-     font-family:'Courgette', cursive;
-     font-size:5rem;
 }
 
 #foodMenuTab{
@@ -84,13 +85,13 @@ h4,h3{
      text-decoration:none;
      background-color:yellow;
 }
-#locationModalHeader{
+#locationModalHeader,.optionCardBody{
      background-color:#e88d17;
      color:white;
 }
-#us{
+/* #us{
      text-decoration:underline;
-}
+} */
 #locationDisplay{
     color:white;
 }
@@ -112,12 +113,15 @@ h4,h3{
     
 }
 
-#reserveTableDiv{
+#reserveTableDiv,.loginRegisterForm{
      border:3px solid #e88d17;
 }
 
+.loginRegisterForm{
+     border:1px solid #e88d17;
+}
 /* Menu Dispaly cards */
-.cardMasion,#bookTable{
+.cardMasion,#bookTable,.optioncard{
      border:3px solid black;
 }
 .menuName{
@@ -140,5 +144,25 @@ h4,h3{
 }
 #signup:hover,#forgotPwd:hover{
      background-color:yellow;
+}
+
+/* footer */
+footer{
+     
+     background-color:#e88d17;
+     margin-top:0;
+     padding:20px 0;
+     
+     
+}
+
+/* feedback form */
+#feedbackForm,#optionCardDeck{
+     border:3px solid #e88d17;
+     margin-bottom:10px;
+}
+
+#optionCardDeck{
+     background-color:#f2cda0;
 }
 
