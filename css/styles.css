@@ -68,6 +68,7 @@ h4,h3{
 .foodCard:hover{
      background-color:#f2cda0;
      color:black;
+     border:2px solid black;
 }
 /* a.nav-link:active{
      background-color:green;;
@@ -85,8 +86,8 @@ h4,h3{
      text-decoration:none;
      background-color:yellow;
 }
-#locationModalHeader,.optionCardBody{
-     background-color:#e88d17;
+#locationModalHeader,.optionCardBody,#loginModalHeader,#loginModalFooter{
+     background-color:#f2cda0;
      color:white;
 }
 /* #us{
@@ -166,3 +167,36 @@ footer{
      background-color:#f2cda0;
 }
 
+.buttonColor{
+     background-color:#e88d17;
+     color:white;
+}
+.buttonColor:hover{
+     border:2px solid black;
+}
+
+/* highlight button to show active - Login Form */
+.borderClass{
+  border:2px solid black;
+}
+
+/* #startersPill{
+     color:red;
+     background-color:yellow;
+} */
+#foodMenuTab{
+     background-color:#f2cda0;
+}
+ /* #startersPill,#soupsPill,#pastaPill,#pizzaPill,#kidsPill,#dessertsPill,#BeveragesPill{
+     background-color:#f2cda0;
+} */
+
+/* #startersPill:focus,#soupsPill:focus,#pastaPill:focus,#pizzaPill:focus,#kidsPill:focus,#dessertsPill:focus,#BeveragesPill:focus,
+
+#startersPill:active,#soupsPill:active,#pastaPill:active,#pizzaPill:active,#kidsPill:active,#dessertsPill:active,#BeveragesPill:active{
+     background-color:#e88d17;
+     border:2px solid black;
+} */
+/* #startersPill:hover,#soupsPill:hover,#pastaPill:hover,#pizzaPill:hover,#kidsPill:hover,#dessertsPill:hover,#BeveragesPill:hover{
+     background-color:#f2cda0;
+} */

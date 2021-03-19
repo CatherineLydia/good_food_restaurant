@@ -72,17 +72,24 @@ $(function(){
         $("#register").hide();
         $('#loginFooter').show();
         $('#registerFooter').hide();
+        $("#loginButton").addClass('borderClass');
 
         $('#loginButton').click(function(){
             $("#register").hide();
             $('#registerFooter').hide();
+            $("#registerButton").removeClass('borderClass');
+            $("#loginButton").addClass('borderClass');
             $("#login").show();
             $('#loginFooter').show();
         });
         $('#registerButton').click(function(){
             $("#login").hide();
-             $('#loginFooter').hide();
+            $('#loginFooter').hide();
+            $("#loginButton").removeClass('borderClass');
+            $("#registerButton").addClass('borderClass');
             $("#register").show();
             $('#registerFooter').show();
-        })
+        });
+
+        
     });
