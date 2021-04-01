@@ -37,7 +37,7 @@
               <li class="nav-item active"><a class="nav-link text-nowrap" href="index.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
               <li class="nav-item"><a class="nav-link text-nowrap" href="menu.html"><i class="fa fa-lg fa-bars"></i>Menu</a></li>
               <li class="nav-item"><a class="nav-link text-nowrap" href="reserveTable.html"><i class="fa fa-lg fa-coffee"></i>Reservations</a></li>
-              <li class="nav-item"><a class="nav-link text-nowrap" href="#"><i class="fa fa-lg fa-info"></i>About</a></li>
+              <li class="nav-item"><a class="nav-link text-nowrap" href="about.html"><i class="fa fa-lg fa-info"></i>About</a></li>
               <li class="nav-item"><a class="nav-link text-nowrap" href="#"><i class="fa fa-lg fa-address-card"></i>Contact</a></li>
           </ul>
           <div class="navbar-text ml-auto">
@@ -61,7 +61,7 @@
                             <div class="dropdown ">
                                 <a class=" dropdown-toggle" href="#" role="button" id="cart" data-toggle="dropdown">
                                     <i class="fa fa-lg fa-cart-plus"></i></a>
-                                    <div class="dropdown-menu w-100 m-0  p-0 overflow-auto">
+                                    <div class="dropdown-menu m-0  p-0 overflow-auto" id="cartDropdownBox" style="width:200px" >
                                         <div class="dropdown-item">Sub-Total<span class="ml-3">$0</span></div>
                                         <a class="dropdown-item" href="#">View Cart</a>
                                         <div class="dropdown-divider"></div>
@@ -291,8 +291,8 @@
     </div>
 </div>
 
-<!-- Contact Information -->
-<div class="container mt-5">
+    <!-- Contact Information -->
+    <div class="container mt-5">
 
         <div class="row row-content align-items-center">
             <div class="col-12 mt-4">
@@ -312,7 +312,7 @@
             </div>
         </div>
         <!-- Feedback Form -->
-        <div class="row row-content justify-content-center" id="feedbackForm">
+        <div class="row row-content justify-content-center pt-2" id="feedbackForm">
             <div class="col-12">
                 <h3>Send us your Feedback</h3>
                 <hr />
@@ -320,15 +320,15 @@
             <div class="col-md-10">
                 <form>
                     <div class="form-group row">
-                        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                        <label for="fName" class="col-md-2 col-form-label">First Name</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                            <input type="text" class="form-control" id="fName" name="firstName" placeholder="First Name" />
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                        <label for="lName" class="col-md-2 col-form-label">Last Name</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                            <input type="text" class="form-control" id="lName" name="lastName" placeholder="Last Name" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -387,7 +387,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
                         <li><a href="reserveTable.html">Reservation</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>

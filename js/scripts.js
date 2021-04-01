@@ -91,5 +91,10 @@ $(function(){
             $('#registerFooter').show();
         });
 
-        
+        // $('#cart').click(function(){
+        //     $('#cartDropdownBox').css("background-color", "red");
+        //     // $('#cartDropdownBox').width(50em);
+        //     $( "#cartDropdownBox" ).last().offset({ top: 30, left: 575});
+
+        // })
     });

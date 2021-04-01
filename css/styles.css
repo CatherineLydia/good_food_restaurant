@@ -44,7 +44,15 @@ h4,h3{
      text-shadow:2px 2px black;
      font-family:'Courgette', cursive;
 }
-
+.aboutHeading{
+     font-family: 'Yatra One', cursive;
+     font-size:30px;
+     
+}
+#aboutDiv{
+     background-color:#f2cda0 ;
+     border:5px solid #e88d17;
+}
 /* Food Menu */
 .foodTabContent{
      border: 1px solid #D0D0D0;
@@ -86,7 +94,7 @@ h4,h3{
      text-decoration:none;
      background-color:yellow;
 }
-#locationModalHeader,.optionCardBody,#loginModalHeader,#loginModalFooter{
+#locationModalHeader,.optionCardBody,#loginModalHeader,#loginModalFooter,#bookTableHeader{
      background-color:#f2cda0;
      color:white;
 }
@@ -102,9 +110,8 @@ h4,h3{
      position:fixed;
      bottom:0;
      right:5vh;
-     
+     z-index:10; /*to stack over other elements */
 }
-
 #reserveTableJumbotron{
      width:100%;
      height:400px;
@@ -153,13 +160,14 @@ footer{
      background-color:#e88d17;
      margin-top:0;
      padding:20px 0;
-     
+    
      
 }
 
 /* feedback form */
 #feedbackForm,#optionCardDeck{
      border:3px solid #e88d17;
+     background-color:#f2cda0;
      margin-bottom:10px;
 }
 
@@ -171,19 +179,17 @@ footer{
      background-color:#e88d17;
      color:white;
 }
-.buttonColor:hover{
+.buttonColor:hover,.borderClass{
      border:2px solid black;
 }
 
 /* highlight button to show active - Login Form */
-.borderClass{
-  border:2px solid black;
+#aboutCarouselDiv{
+  border:3px solid black;
+  margin-top:80px;
+  background-color:#e88d17;
 }
 
-/* #startersPill{
-     color:red;
-     background-color:yellow;
-} */
 #foodMenuTab{
      background-color:#f2cda0;
 }
@@ -200,3 +206,7 @@ footer{
 /* #startersPill:hover,#soupsPill:hover,#pastaPill:hover,#pizzaPill:hover,#kidsPill:hover,#dessertsPill:hover,#BeveragesPill:hover{
      background-color:#f2cda0;
 } */
+.carousel-caption{
+     background-color: rgba(0, 0, 0, 0.3);
+   
+}
